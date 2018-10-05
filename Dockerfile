@@ -1,4 +1,4 @@
-FROM php:7.1-fpm
+FROM php:7.2-fpm
 
 # Install PHP extensions and PECL modules.
 RUN apt-get update && deps=" \
@@ -10,6 +10,7 @@ RUN apt-get update && deps=" \
         libicu-dev \
         libmcrypt-dev \
         libssl-dev \
+        zip \
         wget \
         git \
         vim \
